@@ -525,7 +525,7 @@ img {
     width: auto;
   }
 
-  /* 2. HERO SECTION */
+  /* 2. HERO */
   .hero {
     flex-direction: column;
     padding: 0;
@@ -583,7 +583,7 @@ img {
     border-radius: 2px;
   }
 
-  /* 3. CARDS (Information Section) */
+  /* 3. CARDS */
   .split-section {
     flex-direction: column;
     padding-top: 16px;
@@ -671,7 +671,7 @@ img {
     color: #4a90e2;
   }
 
-  /* 4. Start learning (Courses Section) */
+  /* 4. Start learning */
   .courses-section {
     background-color: #ffffff;
     padding: 32px 16px;
@@ -718,7 +718,7 @@ img {
     display: none;
   }
 
-  /* 5. THESIS EXHIBIT SECTION */
+  /* 5. THESIS EXHIBIT */
   .thesis-section {
     padding: 32px 0 24px 0;
   }
