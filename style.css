@@ -165,89 +165,116 @@ img {
 /* CARDS */
 .split-section {
   display: flex;
-  padding: 32px 24px;
-  gap: 24px;
+  padding: 0 24px;
   background-color: #ffffff;
   border-bottom: 1px solid #e6e6e6;
+  width: 100%;
 }
 
 .split-left {
   flex: 0 0 60%;
+  width: 60%;
+  padding-top: 32px;
+  padding-right: 24px;
   display: flex;
   flex-direction: column;
 }
 
 .split-image {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.split-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .split-left h2 {
   font-size: 32px;
   font-weight: 700;
   color: #333333;
-  margin-bottom: 16px;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
 .split-left blockquote {
   font-size: 16px;
   color: #4a4a4a;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 16px;
 }
 
 .split-left .attribution {
   font-size: 14px;
-  color: #777777;
+  color: #4a4a4a;
+  margin-bottom: 32px;
 }
 
 .split-right {
   flex: 0 0 40%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  border-left: 1px solid #e6e6e6;
 }
 
 .info-card {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
 }
 
 .info-card:last-child {
   border-bottom: none;
-  padding-bottom: 0;
+  background-color: #dcdcdc;
 }
 
 .info-card-image {
   flex: 0 0 35%;
-  aspect-ratio: 4 / 3;
+  width: 35%;
+  height: auto;
   overflow: hidden;
 }
 
+.info-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .info-card-body {
-  flex: 1;
+  flex: 0 0 65%;
+  width: 65%;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .info-card-body h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: #333333;
+  margin-bottom: 8px;
 }
 
 .info-card-body p {
-  font-size: 14px;
+  font-size: 15px;
   color: #4a4a4a;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .read-more {
-  font-size: 14px;
-  color: #0066cc;
-  font-weight: 600;
+  font-size: 15px;
+  color: #4a90e2;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .read-more:hover {
