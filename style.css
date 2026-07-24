@@ -252,6 +252,18 @@ img {
   object-fit: cover;
 }
 
+.info-card-image .mobile-img {
+  display: none;
+}
+
+.mobile-text {
+  display: none;
+}
+
+.desktop-text {
+  display: inline;
+}
+
 .info-card-body {
   flex: 0 0 65%;
   width: 65%;
@@ -611,12 +623,27 @@ img {
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 16px;
+    aspect-ratio: 16 / 9;
   }
 
-  .info-card-image img {
-    width: 100%;
-    height: auto;
+  .info-card-image .desktop-img {
+    display: none;
+  }
+
+  .info-card-image .mobile-img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
   }
 
   .info-card-body {
