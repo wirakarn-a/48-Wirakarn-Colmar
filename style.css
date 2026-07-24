@@ -644,14 +644,16 @@ img {
     color: #4a90e2;
   }
 
-  /* 4. Start learning */
+  /* 4. Start learning (Courses Section) */
   .courses-section {
     background-color: #ffffff;
     padding: 32px 16px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .courses-section .section-heading {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     font-size: 28px;
     font-weight: 700;
   }
@@ -664,7 +666,7 @@ img {
 
   .course-card {
     background-color: #dcdcdc;
-    padding: 16px;
+    padding: 16px 16px 24px 16px;
     border-radius: 0;
   }
 
@@ -681,6 +683,7 @@ img {
     font-weight: 700;
     color: #333333;
     margin-bottom: 0;
+    line-height: 1.2;
   }
 
   .course-body .eyebrow,
@@ -688,13 +691,14 @@ img {
     display: none;
   }
 
-  /* 5. THESIS EXHIBIT */
+  /* 5. THESIS EXHIBIT SECTION */
   .thesis-section {
-    padding: 32px 0 16px 0;
+    padding: 32px 0 24px 0;
   }
 
   .thesis-section .section-heading {
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-size: 28px;
     font-weight: 700;
   }
@@ -735,5 +739,6 @@ img {
   .footer-content p {
     font-size: 12px;
     color: #777777;
+    margin: 0;
   }
 }
