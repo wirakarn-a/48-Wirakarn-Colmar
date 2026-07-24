@@ -281,59 +281,70 @@ img {
   text-decoration: underline;
 }
 
-/* COURSES */
+/* START LEARNING */
 .courses-section {
   background-color: #dcdcdc;
-  padding: 32px 24px;
+  padding: 32px 72px;
+  width: 100%;
+}
+
+.courses-section .section-heading {
+  margin-bottom: 32px;
 }
 
 .course-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .course-card {
   background-color: #ffffff;
-  border-radius: 4px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
 .course-image {
-  height: 160px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .course-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
-.course-card h3 {
+.course-body {
+  padding: 16px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-body h3 {
   font-size: 20px;
   font-weight: 700;
   color: #333333;
-  padding: 16px 16px 8px 16px;
+  line-height: 1.2;
+  margin-bottom: 8px;
 }
 
-.course-card .eyebrow {
+.course-body .eyebrow {
   font-size: 12px;
   font-weight: 600;
   color: #777777;
-  letter-spacing: 1px;
-  padding: 0 16px 4px 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
 }
 
-.course-card p:not(.eyebrow) {
+.course-body p:not(.eyebrow) {
   font-size: 14px;
   color: #4a4a4a;
-  padding: 0 16px 16px 16px;
+  line-height: 1.4;
 }
 
 /* THESIS EXHIBITS */
@@ -492,6 +503,10 @@ img {
   .split-left,
   .split-right {
     flex: 0 0 100%;
+  }
+
+  .courses-section {
+    padding: 32px 16px;
   }
 
   .course-grid {
